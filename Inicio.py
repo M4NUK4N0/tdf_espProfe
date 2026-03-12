@@ -8,12 +8,12 @@ from nltk.stem import SnowballStemmer
 st.title("🔍 Demo TF-IDF en Español")
 
 # Documentos de ejemplo
-default_docs = """El perro ladra fuerte en el parque.
-El gato maúlla suavemente durante la noche.
-El perro y el gato juegan juntos en el jardín.
-Los niños corren y se divierten en el parque.
-La música suena muy alta en la fiesta.
-Los pájaros cantan hermosas melodías al amanecer."""
+default_docs = """Mati juega Valo.
+Juanpa vende cookies.
+Piti está siendo misterioso.
+Blogsi está prestando un libro.
+Manu se está burlando de Mati.
+Hoy es un dia normal de los Fragments."""
 
 # Stemmer en español
 stemmer = SnowballStemmer("spanish")
@@ -41,23 +41,23 @@ with col2:
     
     # NUEVAS preguntas optimizadas para mayor similitud
     if st.button("¿Dónde juegan el perro y el gato?", use_container_width=True):
-        st.session_state.question = "¿Dónde juegan el perro y el gato?"
+        st.session_state.question = "¿Quién juega Valo?"
         st.rerun()
     
     if st.button("¿Qué hacen los niños en el parque?", use_container_width=True):
-        st.session_state.question = "¿Qué hacen los niños en el parque?"
+        st.session_state.question = "¿Que hace Manu?"
         st.rerun()
         
     if st.button("¿Cuándo cantan los pájaros?", use_container_width=True):
-        st.session_state.question = "¿Cuándo cantan los pájaros?"
+        st.session_state.question = "¿Que hace Juanpa?"
         st.rerun()
         
     if st.button("¿Dónde suena la música alta?", use_container_width=True):
-        st.session_state.question = "¿Dónde suena la música alta?"
+        st.session_state.question = "¿Que es Piti?"
         st.rerun()
         
     if st.button("¿Qué animal maúlla durante la noche?", use_container_width=True):
-        st.session_state.question = "¿Qué animal maúlla durante la noche?"
+        st.session_state.question = "¿Es un dia normal para quienes?"
         st.rerun()
 
 # Actualizar pregunta si se seleccionó una sugerida
