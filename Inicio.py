@@ -40,23 +40,23 @@ with col2:
     st.markdown("### 💡 Preguntas sugeridas:")
     
     # NUEVAS preguntas optimizadas para mayor similitud
-    if st.button("¿Dónde juegan el perro y el gato?", use_container_width=True):
+    if st.button("¿Quién juega Valo?", use_container_width=True):
         st.session_state.question = "¿Quién juega Valo?"
         st.rerun()
     
-    if st.button("¿Qué hacen los niños en el parque?", use_container_width=True):
+    if st.button("¿Que hace Manu?", use_container_width=True):
         st.session_state.question = "¿Que hace Manu?"
         st.rerun()
         
-    if st.button("¿Cuándo cantan los pájaros?", use_container_width=True):
+    if st.button("¿Que hace Juanpa?", use_container_width=True):
         st.session_state.question = "¿Que hace Juanpa?"
         st.rerun()
         
-    if st.button("¿Dónde suena la música alta?", use_container_width=True):
+    if st.button("¿Que es Piti?", use_container_width=True):
         st.session_state.question = "¿Que es Piti?"
         st.rerun()
         
-    if st.button("¿Qué animal maúlla durante la noche?", use_container_width=True):
+    if st.button("¿Es un dia normal para quienes?", use_container_width=True):
         st.session_state.question = "¿Es un dia normal para quienes?"
         st.rerun()
 
